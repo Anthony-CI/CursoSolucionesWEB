@@ -8,18 +8,20 @@ import com.example.demo.service.publisherService;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
 
 import org.springframework.web.bind.annotation.GetMapping;
 
 
 @RestController
 @RequestMapping("/publishers")
-@AllArgsConstructor
-@NoArgsConstructor
+//@AllArgsConstructor
+//@NoArgsConstructor
+@RequiredArgsConstructor	
 
 public class PublisherController {
 	//@Autowired /*peticion de una unica instancia*/
-	private publisherService service;
+	private final publisherService service;
 	
 	/*
 	public PublisherController(publisherService service) {
