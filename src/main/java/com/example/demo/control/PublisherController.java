@@ -34,7 +34,7 @@ public class PublisherController {
 	@GetMapping
 	public Publisher savePublisher() {
 		//service = new publisherService();
-		return service.saveAndValid(new Publisher(1,"UPN"));
+		return service.saveAndValid(new Publisher());
 	}
 	/*
 	@GetMapping
